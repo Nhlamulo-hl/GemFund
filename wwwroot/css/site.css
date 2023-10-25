@@ -1,0 +1,35 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  h1{
+      color :white;
+  }
+}
+label1 {
+    color:white;
+}
+h2
+{
+    color: white;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-image : url(ppo.jpeg);
+  background-repeat : no-repeat;
+  background-size :200%;
+
+
+}
+label {
+    color: black;
+}
