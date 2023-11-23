@@ -3,13 +3,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace GemFund.Areas.Identity.Pages.Account
 {
-    public class Allocate_MoneyModel : PageModel
+    public class ViewGoodsModel : PageModel
     {
         public void OnGet()
-        { }
-            public decimal Amount { get; set; }
-
-        public bool Anonymous { get; set; }
+        {
+        }
     }
-    }
-
+}

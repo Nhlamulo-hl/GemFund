@@ -16,7 +16,7 @@ namespace GemFund.Areas.Identity.Pages.Account
         }
 
     }
-    public enum Eroles
+    public enum Erole
     {
         Defalut = 0,
         Clothes = 1,

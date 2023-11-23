@@ -2,3 +2,47 @@
 @model GemFund.Areas.Identity.Pages.Account.Allocate_MoneyModel
 @{
 }
+
+
+<h2>Allocate Donations</h2>
+<br/>
+<br/>
+
+@using (Html.BeginForm())
+{ }
+
+@Html.ValidationSummary(true)
+
+<div class="form-group">
+    <label for="Date">Date:</label>
+    <input type="date" id="Date" name="Date" required>
+</div>
+<br />
+
+
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Amount)
+    @Html.TextBoxFor(model => model.Amount, new { @class = "form-control" })
+    @Html.ValidationMessageFor(model => model.Amount)
+</div>
+<br/>
+
+<div class="form-group">
+<label for="Active Disaster">Active Disaster:</label>
+    @Html.DropDownList("Category",
+    Html.GetEnumSelectList<Erol>(),
+    "Select category", new {@class = "form-control"})
+
+</div>
+<br />
+
+<div class="form-group">
+    @Html.LabelFor(model => model.Anonymous)
+    @Html.CheckBoxFor(model => model.Anonymous)
+</div>
+
+<a class="nav-link" text-color="White" href="/Identity/Account/ViewDonations">
+    <button type="submit" class="btn btn-primary">Submit Donation</button>
+</a>
+

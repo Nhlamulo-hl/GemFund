@@ -1,0 +1,43 @@
+﻿@page
+@model GemFund.Areas.Identity.Pages.Account.PurchaseGoodsModel
+@{
+    <center>
+        <h2>Purchase Goods</h2>
+    </center>
+
+    <hr />
+    <br />
+
+
+    <label class="from-lable">Goods</label>
+    @Html.DropDownList("Category",
+Html.GetEnumSelectList<Erole>(),
+"Select category", new {@class = "form-control"})
+
+    <br />
+
+    <div class="form-group">
+        <label class="from-lable">Amount</label>
+        @Html.TextBoxFor(model => model.Amount, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Amount)
+    </div>
+
+    <br />
+
+    <div class="form-group">
+
+        <label class="from-lable">Active Disaster</label>
+        @Html.DropDownList("Category",
+    Html.GetEnumSelectList<Erol>(),
+    "Select category", new {@class = "form-control"})
+    </div>
+
+
+    <br />
+
+    <center>
+        <a class="nav-link" text-color="White" href="/Identity/Account/ViewPurchaseGoods">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </a>
+    </center>
+}

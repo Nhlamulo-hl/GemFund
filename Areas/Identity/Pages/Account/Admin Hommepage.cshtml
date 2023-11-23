@@ -1,0 +1,85 @@
+﻿@page
+@model GemFund.Areas.Identity.Pages.Account.Admin_HommepageModel
+@{
+}
+<center>
+
+    <h2>
+        Welcome to  the Admin Home Page
+    </h2>
+
+</center>
+
+<hr />
+<br />
+<h2>Available Amount: </h2>
+<h3> R7000  </h3>
+
+<br />
+<h2>Number of Items: </h2>
+<h3> 50  </h3>
+
+<hr />
+<br />
+<center>
+    <h3>
+        Donations
+    </h3>
+    <h3>
+        <p>
+            <a class="nav-link" href="/Identity/Account/Allocate_Money">
+                <button id="Donations" type="submit" class="w-100 btn btn-lg btn-primary">
+                    Donations
+                </button>
+
+            </a>
+        </p>
+    </h3>
+
+    <br />
+
+    <h3>
+        Donate Goods and Clothing
+    </h3>
+    <h3>
+        <a class="nav-link" text-color="White" href="/Identity/Account/Allocate_Goods">
+            <button id="GoodsDonations" type="submit" class="w-100 btn btn-lg btn-primary">
+                Goods Donation
+            </button>
+        </a>
+    </h3>
+
+
+    <br />
+
+    <h3>
+        Purchase Goods
+    </h3>
+    <h3>
+        <a class="nav-link" text-color="White" href="/Identity/Account/PurchaseGoods">
+            <button id="GoodsDonations" type="submit" class="w-100 btn btn-lg btn-primary">
+                Purchase
+            </button>
+        </a>
+    </h3>
+    <br />
+    <h3>
+            ViewList
+        </h3>
+        
+            <a class="nav-link" text-color="White" href="/Identity/Account/ViewList">
+                <button id="ViewList" type="submit" class="w-100 btn btn-lg btn-primary">
+                    ViewList
+                </button>
+            </a>
+   
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <a href="/Index" class="btn btn-success">Logout</a>
+</center>

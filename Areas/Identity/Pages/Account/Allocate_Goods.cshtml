@@ -2,3 +2,55 @@
 @model GemFund.Areas.Identity.Pages.Account.Allocate_GoodsModel
 @{
 }
+<h2>Allocate Goods</h2>
+<br/>
+<br/>
+
+@using (Html.BeginForm())
+{ }
+
+@Html.ValidationSummary(true)
+
+<div class="form-group">
+    <label for="Date">Date:</label>
+    <input type="date" id="Date" name="Date" required>
+</div>
+<br />
+
+
+<div class="form-group">
+    <label for="NumberOfItems">Number of Items:</label>
+    <input type="number" id="NumberOfItems" name="NumberOfItems" required>
+</div>
+<br />
+
+
+
+<label class="from-lable">Category</label>
+@Html.DropDownList("Category",
+Html.GetEnumSelectList<Eroles>(),
+"Select category", new {@class = "form-control"})
+<br />
+
+
+<div class="form-group">
+    <label for="Active Disaster">Active Disaster:</label>
+    @Html.DropDownList("Category",
+    Html.GetEnumSelectList<Erol>(),
+    "Select category", new {@class = "form-control"})
+    
+</div>
+<br />
+
+<div class="form-group">
+    <label for="IsAnonymous">Remain Anonymous:</label>
+    <input type="checkbox" id="IsAnonymous" name="IsAnonymous">
+</div>
+<br />
+
+
+
+
+<a class="nav-link" text-color="White" href="/Identity/Account/ViewGoods">
+    <button type="submit" class="btn btn-primary">Submit Good Donation</button>
+</a>
